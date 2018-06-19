@@ -1,0 +1,8 @@
+{
+  "name": "tts-and-stt",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
