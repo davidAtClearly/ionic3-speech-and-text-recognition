@@ -1,11 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Speech-to-Text
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+<button ion-button (click)="startTranscribing()">Start Transcribing</button>
+<button ion-button (click)="stopTranscribing()">Stop Transcribing</button>
+<p></p>
+<h1>Translation</h1>
+<p>{{translatedText}}</p>
 </ion-content>
