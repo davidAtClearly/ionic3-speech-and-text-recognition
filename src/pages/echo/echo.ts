@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {SpeechRecognition } from "@ionic-native/speech-recognition";
-
-declare var TTS:any;
+import {TextToSpeech} from "@ionic-native/text-to-speech";
 
 @Component({
   selector: 'page-echo',
@@ -13,8 +12,8 @@ export class EchoPage {
   // holds the speech recognition results
   public translatedText:string = "";
 
-  constructor(public navCtrl: NavController, public sr: SpeechRecognition) {
-
+  constructor(public navCtrl: NavController, public sr: SpeechRecognition, public tts: TextToSpeech) {
+ 
   }
 
 
@@ -68,7 +67,7 @@ export class EchoPage {
    */
   sayThis(_text){
     // pass the user's input to the TTS plugin
-    TTS.speak({
+    this.tts.speak({
       text : _text,
       locale : "en-US", 
       rate : 1.0

@@ -8,7 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { EchoPage } from '../pages/echo/echo';
 
 import { TabsPage } from '../pages/tabs/tabs';
-
+import {TextToSpeech} from "@ionic-native/text-to-speech";
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,7 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    SpeechRecognition,
+    SpeechRecognition,TextToSpeech,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
