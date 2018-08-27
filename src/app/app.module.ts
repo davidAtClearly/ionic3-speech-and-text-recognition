@@ -5,7 +5,10 @@ import { MyApp } from './app.component';
 import {TranslateModule} from "@ngx-translate/core";
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
+import { EchoPage } from '../pages/echo/echo';
+
 import { TabsPage } from '../pages/tabs/tabs';
+
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     HomePage,
+    EchoPage,
     TabsPage
   ],
   imports: [
@@ -27,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     HomePage,
+    EchoPage,
     TabsPage
   ],
   providers: [
