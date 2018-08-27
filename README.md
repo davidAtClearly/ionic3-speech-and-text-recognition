@@ -3,10 +3,10 @@
 This is a sample project demonstrating how to use text-to-speech and speech-to-text with an Ionic 3 application.
 
 
-This project relies on cordova-plugin-tts for Text-to-Speech functionality and the @ionic-native/speech-recognition for Speech-to-Text functionality.
+This project relies on @ionic-native/text-to-speech plugin for Text-to-Speech functionality and the @ionic-native/speech-recognition plugin for Speech-to-Text functionality.
 
 
-This works on both Android & iOS as well as Ionic 2 & 3.
+This project works on both Android & iOS as well as Ionic 2 & 3.
 
 
 ## How to run it ##
