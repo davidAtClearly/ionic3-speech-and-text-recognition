@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 
-
-declare var TTS:any; // this is a reference variable to the cordova-plugin-tts library
 
 @Component({
   selector: 'page-home',
@@ -12,7 +11,7 @@ export class HomePage {
 
   public textInput:string = "";
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public tts: TextToSpeech) {
 
   }
 
@@ -21,7 +20,7 @@ export class HomePage {
   test(){
 
     // pass the user's input to the TTS plugin
-    TTS.speak({
+    this.tts.speak({
       text : this.textInput,
       locale : "en-US", 
       rate : 1.0
